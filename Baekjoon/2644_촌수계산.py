@@ -20,7 +20,7 @@ visited= [False] * (n+1)
 
 def bfs(start,end):
     cnt=0
-    # graph의 컬럼을 들렸을때만 cnt가 증가하기 위하여 q는 이중리스트를 사용
+    # graph의 컬럼을 들렸을때만 cnt가 증가하기 위하여 q는 이차원리스트를 사용
     q=deque([[start,cnt]])
     
     while q:
