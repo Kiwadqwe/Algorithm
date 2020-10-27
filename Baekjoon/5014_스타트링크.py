@@ -29,3 +29,9 @@ def bfs():
     return 'use the stairs'
 
 print(bfs())
+
+# 10 1 10 2 1
+# 6
+
+# 100 2 1 1 0
+# use the stairs
