@@ -29,3 +29,7 @@ cal(a, b, c, d, 1,result)
 
 print(ma)
 print(mi)
+
+# 6
+# 1 2 3 4 5 6
+# 2 1 1 1
