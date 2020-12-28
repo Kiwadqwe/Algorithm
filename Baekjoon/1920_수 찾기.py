@@ -3,17 +3,12 @@ input = sys.stdin.readline
 
 n = int(input())
 array = set(map(int,input().split()))
-# 딕셔너리
-dis = {}
-
-for arr in array:
-    dis[arr] = 1
 
 m = int(input())
-array2 = list(map(int,input().split()))
+target = list(map(int,input().split()))
 
-for arr in array2:
-    if arr in dis:
+for t in target:
+    if t in array:
         print('1')
     else:
         print('0')
