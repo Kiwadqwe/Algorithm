@@ -4,22 +4,22 @@ input = sys.stdin.readline
 n = int(input())
 
 array = []
-node = [0] * (n+1)
+parent = [0] * (n+1)
 
 # 특정 원소가 속한 집합 찾기
-def find_node(node,x):
-    if node[x] != x:
-        node[x] = find_node(node,node[x])
-    return node[x]
+def find_parent(parent,x):
+    if parent[x] != x:
+        parent[x] = find_parent(parent,parent[x])
+    return parent[x]
 
 # 합치기
-def union_node(node,a,b):
-    a = find_node(node,a)
-    b = find_node(node,b)
+def union_parent(parent,a,b):
+    a = find_parent(parent,a)
+    b = find_parent(parent,b)
     if a<b:
-        node[b] = a
+        parent[b] = a
     else:
-        node[a] = b
+        parent[a] = b
 
 # 입력
 for _ in range(n):
@@ -27,7 +27,7 @@ for _ in range(n):
 
 # 본인 초기화
 for i in range(1,n+1):
-    node[i] = i
+    parent[i] = i
     
 edges = []
 result = 0
@@ -44,8 +44,8 @@ edges.sort()
 for edge in edges:
     c,a,b = edge
     # 싸이클이 발생하지 않을 경우
-    if find_node(node,a) != find_node(node,b):
-        union_node(node,a,b)
+    if find_parent(parent,a) != find_parent(parent,b):
+        union_parent(parent,a,b)
         # 비용 추가
         result+=c
 print(result)
