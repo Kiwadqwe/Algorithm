@@ -31,7 +31,6 @@ def dijkstra(start):
                 heapq.heappush(q,(cost,i[0]))
 
 dijkstra(1)
-
 max_node=0
 max_distance=0
 result=[]
