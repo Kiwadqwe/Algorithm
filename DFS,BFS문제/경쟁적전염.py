@@ -5,6 +5,7 @@ n,k = map(int,input().split())
 graph=[]
 # 바이러스 노드
 array=[]
+
 # 동서남북 좌표 이동
 dx=[-1,0,1,0]
 dy=[0,1,0,-1]
