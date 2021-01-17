@@ -11,7 +11,6 @@ dy = [0, 1, 0, -1]
 
 result = 0
 
-
 def dfs(x, y, index):
     # (x,y)의 위치와 연결된 나라 정보를 담는 리스트
     united = []
