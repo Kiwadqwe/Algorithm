@@ -29,6 +29,7 @@ for i in range(m):
 edges.sort()
 result=0
 hap=0
+
 for edge in edges:
     z,a,b=edge
     if find_parent(parent,a) != find_parent(parent,b):
