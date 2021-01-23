@@ -3,6 +3,7 @@ leng=len(n)
 cnt=0
 cnt1=0
 cnt2=0
+
 for i in range(1,leng):
     # save=n[0:i]
     for j in range(i,leng):
