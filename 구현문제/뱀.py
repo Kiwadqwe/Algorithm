@@ -1,6 +1,7 @@
 n= int(input())
 k= int(input())
 d=[[0]*(n+1) for _ in range(n+1)]
+
 #동남서북 좌표
 d_row=[0,1,0,-1]
 d_col=[1,0,-1,0]
