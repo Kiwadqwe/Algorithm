@@ -3,7 +3,7 @@ n = int(input())
 m = int(input())
 
 # 2차원 리스트를 만들고 모든 값들을 무한으로 초기화
-graph = [[INF] * (n+1) for i in range(n+1)]
+graph = [[INF]*(n+1) for i in range(n+1)]
 
 # 본인노드로 가는 거리는 0
 for i in range(1, n+1):
