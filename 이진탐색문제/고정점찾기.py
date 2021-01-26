@@ -1,6 +1,5 @@
 n = int(input())
 array = list(map(int,input().split()))
-
 temp=0
 
 def binary_search(array,start,end):
