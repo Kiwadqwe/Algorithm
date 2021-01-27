@@ -29,4 +29,5 @@ while True:
     # C개 이상의 공유기를 설치할 수 없는 경우, 거리를 감소
     else:
         end = mid-1
+        
 print(result)
