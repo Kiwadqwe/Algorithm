@@ -9,15 +9,13 @@ dy = [0,1,0,-1,0,0]
 dz = [0,0,0,0,1,-1]
 
 def bfs():
-    global cnt
     q = deque()
-
+    
     for k in range(h):
         for i in range(m):
             for j in range(n):
                 if array[k][i][j] == 1:
                     q.append((k,i,j))
-
     while q:
         z,x,y = q.popleft()
         for i in range(6):
