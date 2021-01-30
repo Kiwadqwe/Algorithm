@@ -4,65 +4,63 @@ input = sys.stdin.readline
 
 n = int(input())
 array = [list(map(int,input().split())) for _ in range(n)]
+visited = [[False] * n for _ in range(n)]
 dx = [-1,0,1,0]
 dy = [0,1,0,-1]
 
-cnt =0
-
-def bfs(x,y,land):
+def bfs(x,y,group):
     q = deque()
     q.append((x,y))
-    
+    visited[x][y] = True
+    array[x][y] = group
     while q:
-        x,y = q.popleft()
+        x,y= q.popleft()
         for i in range(4):
             nx,ny = x+dx[i],y+dy[i]
-            if 0<=nx<n and 0<=nx<n:
-                if array[nx][ny]:
-                    array[nx][ny] = land
+            if 0<=nx<n and 0<=ny<n:
+                if not visited[nx][ny] and array[nx][ny] == 1:
+                    visited[nx][ny] = True
+                    array[nx][ny] = group
                     q.append((nx,ny))
 
-land =1
-
+group = 2
 # 육지 그룹화
 for i in range(n):
     for j in range(n):
-        if array[i][j]:
-            land+=1
-            array[i][j] = land
-            bfs(i,j,land)
+        if not visited[i][j] and array[i][j] == 1:
+            bfs(i,j,group)
+            group+=1
 
-d = int(1e9)
-print(array)
+result = int(1e9)
 
-def bfs2(land):
-    global d
-    q =deque()
-    dis = [[-1] *n for _ in range(n)]
+def bfs2(group):
+    global result
+    q = deque()
+    cnt = [[-1] * n for _ in range(n)]
 
     for i in range(n):
         for j in range(n):
-            if array[i][j] == land:
+            if array[i][j] == group:
+                cnt[i][j] = 0
                 q.append((i,j))
-                dis[i][j] = 0
     while q:
         x,y = q.popleft()
         for i in range(4):
             nx,ny = x+dx[i],y+dy[i]
             if 0<=nx<n and 0<=ny<n:
-                if array[nx][ny] != land and array[nx][ny]:
-                    d = min(d, dis[x][y])
+                if array[nx][ny] != group and array[nx][ny] !=0:
+                    # 다리의 최소 개수
+                    result = min(result, cnt[x][y])
                     return
-
-                if dis[nx][ny] == -1 and not array[nx][ny]:
-                    dis[nx][ny] = dis[x][y] +1
+                
+                if cnt[nx][ny] == -1:
+                    cnt[nx][ny] = cnt[x][y]+1
                     q.append((nx,ny))
+                    
+for i in range(2,group+1):
+    bfs2(i)
 
-
-# for i in range(1,land):
-#     bfs2(i)
-
-print(d)
+print(result)
 
 # 10
 # 1 1 1 0 0 0 0 1 1 1
