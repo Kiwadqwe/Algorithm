@@ -7,6 +7,7 @@ d_row=[0,1,0,-1]
 d_col=[1,0,-1,0]
 array=[]
 tail=[[0]*(n+1) for _ in range(n+1)]
+
 #사과 위치 
 for i in range(k):
     a,b = map(int,input().split())
