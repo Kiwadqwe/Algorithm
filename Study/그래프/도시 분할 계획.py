@@ -11,6 +11,7 @@ def union_parent(parent,a,b):
     else:
         parent[a]= b
 n,m = map(int,input().split())
+
 #집의 개수 n+1으로 부모 테이블 초기화 
 parent = [0] *(n+1)
 # 모든 간선을 담을 리스트와 최종 비용을 담을 변수
