@@ -1,5 +1,4 @@
 n,k = map(int, input().split())
-
 count=0
 
 while True:
