@@ -1,25 +1,17 @@
 import sys
 input = sys.stdin.readline
 
-s = list(input().strip())
-tp = []
+s = input().strip()
+result = 'z' * 51
 
-for i in range(len(s)-1):
+for i in range(1,len(s)):
     for j in range(i+1,len(s)):
-        a=s[:i]
-        b=s[i:j]
-        c=s[j:]
-        if len(a) and len(b) and len(c):
-            a.reverse()
-            b.reverse()
-            c.reverse()
-            tp.append(a+b+c)
-result = []
-
-for t in tp:
-    result.append(''.join(t))
-result = sorted(result)
-print(result[0])
+        a = s[:i][::-1]
+        b = s[i:j][::-1]
+        c = s[j:][::-1]
+        result = min(result,a+b+c)
+        
+print(result)
 
 # mobitel
 
