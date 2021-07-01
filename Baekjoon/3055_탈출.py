@@ -17,8 +17,6 @@ def bfs(x,y):
 
     while q:
         x,y,check = q.popleft()
-        print('\n')
-        print(x,y,check)
         for i in range(4):
             nx,ny = dx[i]+x,dy[i]+y
             if 0<=nx<r and 0<=ny<c:
