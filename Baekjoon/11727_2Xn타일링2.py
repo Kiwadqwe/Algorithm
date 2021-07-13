@@ -1,5 +1,4 @@
 import sys
-
 input = sys.stdin.readline
 
 n = int(input())
@@ -16,3 +15,9 @@ def fibo(x):
     return d[x] 
 
 print(fibo(n))
+
+# 8
+# 171
+
+# 12
+# 2731
