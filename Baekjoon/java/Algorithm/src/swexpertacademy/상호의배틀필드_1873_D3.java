@@ -1,109 +1,128 @@
 package swexpertacademy;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class 상호의배틀필드_1873_D3 {
-	static int TC, H, W,ans;
+	static int TC, H, W, x, y, dir;
 	static char[][] map;
-	
+	static char[] direction = { '0', '^', '>', 'v', '<' };
+	static int[] dx = { 0, -1, 0, 1, 0 };
+	static int[] dy = { 0, 0, 1, 0, -1 };
+	static StringBuilder sb = new StringBuilder();
+
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		StringBuilder sb = new StringBuilder();
-		
 		TC = Integer.parseInt(br.readLine());
-		StringTokenizer st = new StringTokenizer(br.readLine());
-		H= Integer.parseInt(st.nextToken());
-		W = Integer.parseInt(st.nextToken());
-		map = new char[H][W];
-		
-		int ans = 0;
-		int x=0;
-		int y=0;
-		String b = "";
-		int dir = 0;
-		
-		for(int i=0; i<H; i++) {
-			b = br.readLine();
-			for(int j=0; j<W; j++) {
-				map[i][j] = b.charAt(j);
-			if (map[i][j] == '<') {
-				x=i;
-				y=j;
-				dir = 1;
-			}
-			else if (map[i][j] == '>') {
-				x=i;
-				y=j;
-				dir = 2;
-			}
-			
-			else if (map[i][j] == '^') {
-				x=i;
-				y=j;
-				dir = 3;
-			}
-			else if (map[i][j] == 'v') {
-				x=i;
-				y=j;
-				dir = 4;
-			}
-		}
-	}
-		
-		int N = Integer.parseInt(br.readLine());
-		char[] move = new char[N];
 
-		move = br.readLine().toCharArray();
-		char tp = ' ';
-		
-		for (char c : move) {
-			if (c == 'U'){
-				if (map[x+1][y] == '.') {
-					tp = map[x+1][y];
-					map[x+1][y] = map[x][y];
-					map[x][y] = tp;
+		for (int k = 1; k <= TC; k++) {
+			StringTokenizer st = new StringTokenizer(br.readLine());
+			H = Integer.parseInt(st.nextToken());
+			W = Integer.parseInt(st.nextToken());
+			map = new char[H][W];
+			String b = null;
+			for (int i = 0; i < H; i++) {
+				b = br.readLine();
+				for (int j = 0; j < W; j++) {
+					map[i][j] = b.charAt(j);
+					if (map[i][j] == '<' || map[i][j] == '>' || map[i][j] == '^' || map[i][j] == 'v') {
+						x = i;
+						y = j;
+						for (int l = 1; l <= 4; l++) {
+							if (map[i][j] == direction[l]) dir = l;
+						}
+					}
 				}
 			}
-			else if(c == 'D') {
-					if (map[x-1][y] == '.') {
-						tp = map[x-1][y];
-						map[x-1][y] = map[x][y];
-						map[x][y] = tp;
+
+			int N = Integer.parseInt(br.readLine());
+			char[] move = br.readLine().toCharArray();
+			
+			for (char c : move) {
+				if (c == 'U') {
+					dir = 1;
+					map[x][y] = direction[dir];
+					calDir();
+				} else if (c == 'D') {
+					dir = 3;
+					map[x][y] = direction[dir];
+					calDir();
+				} else if (c == 'L') {
+					dir = 4;
+					map[x][y] = direction[dir];
+					calDir();
+				} else if (c == 'R') {
+					dir = 2;
+					map[x][y] = direction[dir];
+					calDir();
+				} else if (c == 'S') {
+					shoot();
 				}
 			}
-			else if(c == 'L') {
-					if (map[x][y-1] == '.') {
-						tp = map[x][y-1];
-						map[x][y-1] = map[x][y];
-						map[x][y] = tp;
-				}
-			}
-			else if(c == 'R') {
-					if (map[x][y+1] == '.') {
-						tp = map[x][y+1];
-						map[x][y+1] = map[x][y];
-						map[x][y] = tp;
-				}
-			}
-			else if(c =='S') {
-					
-				}
-			}
-		
-		print();
-		System.out.printf("#%d %d",TC,ans);
+			sb.append("#" + k+" ");
+			print();
+		}
+		System.out.println(sb);
 	}
 
 	private static void print() {
-		System.out.println();
-		for(int i=0; i<H; i++) {
-			for (int j = 0; j<W; j++) {
-				System.out.print(map[i][j]);
+		for (int i = 0; i < H; i++) {
+			for (int j = 0; j < W; j++) {
+				sb.append(map[i][j]);
 			}
-			System.out.println();
+			sb.append("\n");
 		}
+	}
+
+	private static void shoot() {
+		int nx = x;
+		int ny = y;
 		
+		while (true) {
+			if (check(nx,ny)) {
+				if (map[nx][ny] == '*') {
+					map[nx][ny] = '.';
+					break;
+				}
+			} else {
+				break;
+			}
+			if (map[nx][ny] == '#') {
+				break;
+			}
+			nx += dx[dir];
+			ny += dy[dir];
+		}
+	}
+
+	private static void calDir() {
+		int nx = x + dx[dir];
+		int ny = y + dy[dir];
+		
+		if(check(nx,ny)) {
+			if(map[nx][ny] == '.') {
+				map[x][y] = '.';
+				map[nx][ny] = direction[dir];
+				x = nx;
+				y = ny;
+			}
+		}
+	}
+	
+	public static boolean check(int x, int y ) {
+		if(x >= 0 && x < H  && y >= 0 && y < W) return true;
+		return false;
 	}
 }
+
+//1
+//3 7
+//***....
+//*-..#**
+//#<.****
+//23
+//SURSSSSUSLSRSSSURRDSRDS
+//
+//#1 **....v
+//.-..#..
+//#......
