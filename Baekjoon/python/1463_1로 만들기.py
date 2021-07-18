@@ -10,6 +10,7 @@ for i in range(2,x+1):
         dp[i] = min(dp[i//3]+1,dp[i])
     if i%2 ==0:
         dp[i] = min(dp[i//2]+1,dp[i])
+        
 print(dp[x])
 
 # 10
