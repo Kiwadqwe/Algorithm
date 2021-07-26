@@ -50,7 +50,6 @@ def safe_search():
                 cnt += 1
 
 result = 0
-
 for cm in combinations(tp,3):
     array = copy.deepcopy(temp)
     for x,y in cm:
