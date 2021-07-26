@@ -1,7 +1,7 @@
 import sys
 input = sys.stdin.readline
 
-array,white,black = [],[],[]
+array,area = [],[]
 
 # 우 우하 하 우상
 dx = [0,1,1,-1]
@@ -10,13 +10,11 @@ dy = [1,1,0,1]
 for i in range(19):
     array.append(list(map(int,input().split())))
     for j in range(19):
-        if array[i][j] == 1:
-            black.append((i,j))
-        elif array[i][j] == 2:
-            white.append((i,j))
+        if array[i][j] == 1 or array[i][j] == 2:
+            area.append((i,j))
 
-white_check,black_check = False,False
 r,c,result =0,0,0
+check = False
 
 def omok(x,y):
     global result,r,c
@@ -48,17 +46,12 @@ def omok(x,y):
 
     return False
         
-for a,b in white:
-    white_check = omok(a,b)
-    if white_check:
-        break
-
-for a,b in black:
-    black_check = omok(a,b)
-    if black_check:
+for a,b in area:
+    check = omok(a,b)
+    if check:
         break
     
-if white_check or black_check:
+if check:
     print(result)
     print(r+1,c+1)
 else:
