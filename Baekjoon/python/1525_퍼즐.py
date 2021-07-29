@@ -44,6 +44,7 @@ def bfs():
                     dist[move] = dist[v]+1
                     q.append(move)
     return -1
+    
 print(bfs())
 
 # 1 0 3
