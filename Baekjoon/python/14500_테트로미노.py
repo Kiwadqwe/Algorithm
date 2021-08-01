@@ -1,6 +1,6 @@
 import sys
 input = sys.stdin.readline
-te = [
+tetromino = [
     [(0,0),(0,1),(0,2),(0,3)], 
     [(0,0),(1,0),(2,0),(3,0)],
 
@@ -34,10 +34,10 @@ result = 0
 
 def move(x,y):
     global result
-    for k in range(len(te)):
+    for k in range(len(tetromino)):
         tp = 0
         for i in range(4):
-            nx,ny = te[k][i][0]+x,te[k][i][1]+y
+            nx,ny = tetromino[k][i][0]+x,tetromino[k][i][1]+y
             if 0<=nx<n and 0<=ny<m:
                 tp += array[nx][ny]
             
