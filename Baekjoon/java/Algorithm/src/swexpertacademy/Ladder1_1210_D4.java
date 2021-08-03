@@ -4,69 +4,53 @@ import java.io.*;
 import java.util.*;
 
 public class Ladder1_1210_D4 {
-	static int n =100,tc,x,y,nx,ny,result_x,result_y;
-	static int[] dx = {-1,0,1,0};
-	static int[] dy = {0,1,0,-1};
-	static int[][] map;
-	
-	public static void main(String[] args) throws IOException {
- 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder sb = new StringBuilder();
-        StringTokenizer st = null;
-		
-        for (int t = 1; t <= 10; t++) {
-        	st = new StringTokenizer(br.readLine());
-        	tc = Integer.parseInt(st.nextToken());
-			map = new int[n][n];
-			for (int i = 0; i < n; i++) {
-				st = new StringTokenizer(br.readLine());
-				for (int j = 0; j < n; j++) {
-					map[i][j] = Integer.parseInt(st.nextToken());
-					if(map[i][j] == 2) {
-						x = i;
-						y = j;
-					}
-				}
-			}
-			
-			while(true) {
-				nx = dx[0]+x;
-				ny = dy[0]+y;
-				if(nx == 0) {
-					result_x = nx;
-					result_y = ny;
-					break;
-				}
-				x = nx;
-				y = ny;
-				if (0<=nx && nx<n && 0<=ny && ny<n) {
-					if(ny+1 <n && map[nx][ny+1] == 1) {
-						move(nx,ny,1);
-					}else if(0<= ny-1 &&map[nx][ny-1] == 1) {
-						move(nx,ny,3);
-					}
-				}
-			}
-			System.out.println("#"+tc+" "+result_y);
-        }
-	}
+    static int tc, x, y;
+    static int[] dx = { -1, 0, 1, 0 };
+    static int[] dy = { 0, 1, 0, -1 };
+    static int[][] map;
 
-	private static void move(int nx, int ny, int k) {
-		while(true) {
-			int nx2 = nx+dx[k];
-			int ny2 = ny+dy[k];
-			if(map[nx2][ny2] == 1) {
-				if (0<=nx2 && nx2<n && 0<=ny2 && ny2<n) {
-					nx = nx2;
-					ny = ny2;
-				}
-			}
-			
-			if (map[nx-1][ny] == 1) {
-				x = nx;
-				y = ny;
-				break;
-			}
-		}
-	}
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringTokenizer st = null;
+
+        for (int t = 1; t <= 10; t++) {
+            tc = Integer.parseInt(br.readLine());
+            map = new int[100][100];
+
+            for (int i = 0; i < 100; i++) {
+                st = new StringTokenizer(br.readLine(), " ");
+                for (int j = 0; j < 100; j++) {
+                    map[i][j] = Integer.parseInt(st.nextToken());
+                    if (map[i][j] == 2) {
+                        x = i;
+                        y = j;
+                    }
+                }
+            }
+            
+            while (true) {
+                x += dx[0]; // row
+                y += dy[0]; // col
+                if (x == 0) break;
+                if (0 <= x && x < 100 && 0 <= y && y < 100) {
+                    if (y + 1 < 100 && map[x][y + 1] == 1) move(1);
+                    else if (0 <= y - 1 && map[x][y - 1] == 1) move(3);
+                }
+            }
+
+            System.out.println("#" + tc + " " + y);
+        }
+    }
+
+    private static void move(int k) {
+        while (true) {
+            x += dx[k];
+            y += dy[k];
+            if (x < 0 || y < 0 || x >= 100 || y >= 100 || map[x][y] == 0) {
+                x -= dx[k];
+                y -= dy[k];
+                break;
+            }
+        }
+    }
 }
