@@ -6,9 +6,9 @@ import java.util.*;
 public class 상호의배틀필드_1873_D3 {
 	static int TC, H, W, x, y, dir;
 	static char[][] map;
-	static char[] direction = { '0', '^', '>', 'v', '<' };
-	static int[] dx = { 0, -1, 0, 1, 0 };
-	static int[] dy = { 0, 0, 1, 0, -1 };
+	static char[] direction = {'^', '>', 'v', '<'};
+	static int[] dx = {-1, 0, 1, 0};
+	static int[] dy = {0, 1, 0, -1};
 	static StringBuilder sb = new StringBuilder();
 
 	public static void main(String[] args) throws Exception {
@@ -28,7 +28,7 @@ public class 상호의배틀필드_1873_D3 {
 					if (map[i][j] == '<' || map[i][j] == '>' || map[i][j] == '^' || map[i][j] == 'v') {
 						x = i;
 						y = j;
-						for (int l = 1; l <= 4; l++) {
+						for (int l = 0; l < 4; l++) {
 							if (map[i][j] == direction[l]) dir = l;
 						}
 					}
@@ -40,19 +40,19 @@ public class 상호의배틀필드_1873_D3 {
 			
 			for (char c : move) {
 				if (c == 'U') {
-					dir = 1;
+					dir = 0;
 					map[x][y] = direction[dir];
 					calDir();
 				} else if (c == 'D') {
-					dir = 3;
+					dir = 2;
 					map[x][y] = direction[dir];
 					calDir();
 				} else if (c == 'L') {
-					dir = 4;
+					dir = 3;
 					map[x][y] = direction[dir];
 					calDir();
 				} else if (c == 'R') {
-					dir = 2;
+					dir = 1;
 					map[x][y] = direction[dir];
 					calDir();
 				} else if (c == 'S') {
