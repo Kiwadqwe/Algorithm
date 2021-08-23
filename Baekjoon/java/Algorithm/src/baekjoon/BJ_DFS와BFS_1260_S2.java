@@ -49,7 +49,7 @@ public class BJ_DFS와BFS_1260_S2 {
 		while(!q.isEmpty()) {
 			v = q.remove();
 			System.out.print(v +" ");
-			for (int i = 0; i <n+1; i++) {
+			for (int i = 0; i < n+1; i++) {
 				if(!visited[i] && map[v][i] == 1) {
 					visited[i] = true;
 					q.add(i);
@@ -57,13 +57,4 @@ public class BJ_DFS와BFS_1260_S2 {
 			}
 		}
 	}
-
-//	private static void print() {
-//		for (int i = 0; i < map.length; i++) {
-//			for (int j = 0; j < map.length; j++) {
-//				System.out.print(map[i][j]);
-//			}
-//			System.out.println();
-//		}
-//	}
 }
