@@ -41,7 +41,6 @@ public class BJ_보물섬_2589_G5 {
 				}
 			}
 		}
-		
 		System.out.println(result-1);
 	}
 
