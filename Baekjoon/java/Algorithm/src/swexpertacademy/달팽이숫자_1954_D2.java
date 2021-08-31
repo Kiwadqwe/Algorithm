@@ -5,6 +5,7 @@ import java.util.*;
 public class 달팽이숫자_1954_D2 {
 	static int n,tc,dir,x,y,cnt;
 	static int[][] map;
+	
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		tc = sc.nextInt();
