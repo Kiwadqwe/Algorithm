@@ -12,7 +12,9 @@ for i in range(n):
         
 result = sorted(result, reverse = True)
 result = '\n'.join(result)
+
 print(result)
+
 # 4
 # Baha enter
 # Askar enter
