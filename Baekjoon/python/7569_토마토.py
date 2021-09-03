@@ -4,6 +4,7 @@ input = sys.stdin.readline
 
 n,m,h = map(int,input().split())
 array =[[list(map(int,input().split())) for _ in range(m)] for _ in range(h)]
+
 dx = [-1,0,1,0,0,0]
 dy = [0,1,0,-1,0,0]
 dz = [0,0,0,0,1,-1]
