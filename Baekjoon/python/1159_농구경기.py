@@ -6,7 +6,9 @@ array=[]
 for i in range(n):
     m = input()
     array.append(m[0])
+    
 array.sort()
+
 li=[0]*26
 cnt=0
 for i in array:
