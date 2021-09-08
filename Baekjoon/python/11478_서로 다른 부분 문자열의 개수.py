@@ -11,5 +11,4 @@ for i in range(len(s)):
 print(len(result))
 
 # ababc
-
 # 12
