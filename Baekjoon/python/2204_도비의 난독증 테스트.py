@@ -5,6 +5,7 @@ result = []
 
 while True:
     n = int(input())
+    
     array =[]
     if n == 0:
         break
