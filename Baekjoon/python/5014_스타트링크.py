@@ -1,10 +1,8 @@
 import sys
 from collections import deque
-
 input = sys.stdin.readline
 
 f, s, g, u, d = map(int, input().split())
-
 dx=[u,d]
 
 def bfs():
