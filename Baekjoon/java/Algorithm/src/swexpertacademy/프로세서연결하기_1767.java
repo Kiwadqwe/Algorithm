@@ -4,110 +4,105 @@ import java.io.*;
 import java.util.*;
 
 public class 프로세서연결하기_1767 {
-	static int N,result,tp;
-	static int[][] array;
-	static List<Point> arr;
-	static boolean[][] visited;
-	static int[] dx = {-1,0,1,0};
-	static int[] dy = {0,1,0,-1};
+	static int[] dr = {-1,0,1,0};
+	static int[] dc = {0,1,0,-1};
+	static int[][] map;
+	static int N, max, min, totalCnt; // max : 연결한 최대 코어수, min : 최소전선길이의합
+	static List<int[]> list; // 가장자리가 아닌 코어들의 위치를 저장한 리스트
 	
-	public static class Point{
-		int x,y;
-		
-		public Point(int x, int y) {
-			this.x = x;
-			this.y = y;
-		}
-	}
-	
-	public static void main(String[] args) throws Exception {
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	public static void main(String[] args) throws NumberFormatException, IOException {
+		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
 		StringTokenizer st = null;
-		StringBuilder sb = new StringBuilder();
 		
-		int TC = Integer.parseInt(br.readLine());
+		int TC = Integer.parseInt(in.readLine());
 		
-		for (int t = 1; t <= TC; t++) {
-			N = Integer.parseInt(br.readLine());
-			
-			array = new int[N][N];
-			arr = new ArrayList<Point>();
-			result = Integer.MAX_VALUE;
-			tp = 0;
+		for (int tc = 1; tc <= TC; tc++) {
+			N = Integer.parseInt(in.readLine());
+			map = new int[N][N];
+			list = new ArrayList<int[]>();
+			max = 0;
+			min = Integer.MAX_VALUE;
+			totalCnt = 0;
 			
 			for (int i = 0; i < N; i++) {
-				st = new StringTokenizer(br.readLine());
+				st = new StringTokenizer(in.readLine()," ");
 				for (int j = 0; j < N; j++) {
-					array[i][j] = Integer.parseInt(st.nextToken());
+					map[i][j] = Integer.parseInt(st.nextToken());
+					// 가장자리 코어는  저장하지 않는다.
+					if(i==0 || i==N-1 || j==0 || j==N-1) continue;
 					
-					if(i == 0 || j == 0 || i == N-1 || j == N-1) continue;
-					if(array[i][j] == 1) arr.add(new Point(i,j));
+					if(map[i][j] == 1) {
+						list.add(new int[] {i,j});
+						totalCnt++; // 가장자리가 아닌 코어개수
+					}
 				}
 			}
-
-			visited = new boolean[N][N];
-			go(0,0,0);
-			sb.append("#").append(t).append(" ").append(result).append("\n");
+			
+			go(0,0);
+			System.out.println("#"+tc+" "+min);
 		}
-		System.out.println(sb);
 	}
 	
-		public static void go(int idx, int cnt, int count) {
-			if (tp < count) {
-				tp = count;
-				result = cnt;
-				
-			} else if (tp == count) {
-				result = Math.min(result, cnt);
+	private static void go(int index, int cCnt) {
+		if(index == totalCnt) {
+			int res = getLength();
+			// 선택된 코어 개수로 max 갱신
+			if(max<cCnt) {
+				max = cCnt;
+				min = res;
+			}else if(max == cCnt) { // 코어개수가 같아면 최소전선길이의 합
+				if(min>res) min = res;
 			}
-
-			if (idx == arr.size()) {
-				return;
-			}
-
-			Point p = arr.get(idx);
-			
-			for (int k = 0; k < 4; k++) {
-				int nx = p.x;
-				int ny = p.y;
-
-				while (true) {
-					nx += dx[k];
-					ny += dy[k];
-
-					if (nx < 0 || ny < 0 || nx >= N || ny >= N) {
-						go(idx + 1, cnt, count + 1);
-						cnt -= back(k, idx, nx, ny, visited);
-						break;
-					}
-
-					if (array[nx][ny] == 1 || visited[nx][ny]) {
-						cnt -= back(k, idx, nx, ny, visited);
-						break;
-					}
-
-					visited[nx][ny] = true;
-					cnt++;
-				}
-			}
-			go(idx+1, cnt, count);
+			return;
 		}
-
-		public static int back(int k, int idx, int nx, int ny, boolean[][] visited) {
-			int cnt = 0;
-			Point p = arr.get(idx);
-
-			nx -= dx[k];
-			ny -= dy[k];
-			
-			while (true) {
-				if (p.x == nx && p.y == ny) break;
-
-				visited[nx][ny] = false;
-				cnt++;
-				nx -= dx[k];
-				ny -= dy[k];
+		
+		int[] cur = list.get(index);
+		int r = cur[0];
+		int c = cur[1];
+		
+		// index 코어 선택 : 4방향 시도
+		for (int d = 0; d < 4; d++) {
+			if(isAvailable(r,c,d)) {
+				// 전선 놓기
+				setStatus(r,c,d,2);
+				// 다음 코어로
+				go(index+1,cCnt+1);
+				// 놓았던 전선 지우기
+				setStatus(r,c,d,0);
 			}
-			return cnt;
+		}
+		// index 코어 미선택
+		go(index+1,cCnt);
+	}
+
+	private static void setStatus(int r, int c, int d, int s) {
+		int nr = r, nc = c;
+		while(true) {
+			nr += dr[d];
+			nc += dc[d];
+			if(nr<0 || nr>=N || nc<0 || nc>=N ) break;
+			map[nr][nc] = s;
 		}
 	}
+
+	private static boolean isAvailable(int r, int c, int d) {
+		int nr = r, nc = c;
+		while(true) {
+			nr += dr[d];
+			nc += dc[d];
+			if(nr<0 || nr>=N || nc<0 || nc>=N ) break;
+			if(map[nr][nc]>=1) return false; // 코어나 전선이 있는 경우
+		}
+		return true;
+	}
+
+	private static int getLength() {
+		int res = 0;
+		for (int i = 0; i < N; i++) {
+			for (int j = 0; j < N; j++) {
+				if(map[i][j]==2) res++;
+			}
+		}
+		return res;
+	}
+}
