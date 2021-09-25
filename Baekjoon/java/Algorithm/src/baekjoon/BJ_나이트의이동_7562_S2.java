@@ -42,7 +42,6 @@ public class BJ_나이트의이동_7562_S2 {
 			bfs(a,b);
 			sb.append(cnt).append("\n");
 		}
-
 		System.out.println(sb);
 	}
 
