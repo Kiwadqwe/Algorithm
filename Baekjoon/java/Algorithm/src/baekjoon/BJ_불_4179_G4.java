@@ -90,8 +90,7 @@ public class BJ_불_4179_G4 {
 				if(0<=nx && nx<R && 0<=ny && ny<C) {
 					if(j_visited[nx][ny] == 0) {
 						if(array[nx][ny] != '#') {
-							// 불이 퍼진 곳인지 확인 하기 위해서 지훈이가 움직일 좌표가 불이 퍼지는 곳인지 확인
-							// 움직이기 전에 퍼지는 곳인지 확인 하기 위해
+							// 지훈이가 움직일 좌표가 지훈이가 지나고난 다음에 불이 퍼지는 좌표인지 확인
 							if(f_visited[nx][ny]-1 > j_visited[p.x][p.y] || f_visited[nx][ny] == 0) {
 								j_visited[nx][ny] = j_visited[p.x][p.y] + 1;
 								q2.add(new Point(nx,ny));
