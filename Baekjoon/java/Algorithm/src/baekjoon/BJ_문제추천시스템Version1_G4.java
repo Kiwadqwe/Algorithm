@@ -41,6 +41,7 @@ public class BJ_문제추천시스템Version1_G4 {
 		Map<Integer, Integer> map = new HashMap<>();
 		
 		int P=0,L=0;
+		
 		for (int i = 0; i < N; i++) {
 			st = new StringTokenizer(br.readLine());
 			P = Integer.parseInt(st.nextToken());
