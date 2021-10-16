@@ -115,7 +115,9 @@ public class BJ_아기상어_16236_G4 {
 						// 물고기가 있으면서 상어보다 크기가 작은 경우
 						}else if(array[nx][ny] < p.size) {
 							Fish fish = new Fish(nx, ny, array[nx][ny], depth+1);
+							// 현재 지정한 물고기가 없는 경우
 							if(target == null) {
+								// 물고기 설정
 								target = fish;
 							}else {
 								// 우선순위를 고려해서 물고기 타겟 변경
@@ -125,19 +127,22 @@ public class BJ_아기상어_16236_G4 {
 					}
 				}
 			}
+			// 현재 타겟 물고기가 없을 경우
 			if(target != null) break;
 			depth += 1;
 		}
 		
-		// 더이상 먹을 물고기가 없다면
+		// 더이상 먹을 물고기가 없다면 끝내자
 		if(target == null) {
 			return;
 		}else {
 			// 물고기 먹기
 			shark.eat();
+			// 먹은 물고기 0으로
 			array[target.x][target.y] = 0;
+			// 물고기와의 거리 더하기
 			result += target.dist;
-			
+			// 새로운 상어 정보 추가 후 bfs 진행
 			bfs(new Shark(target.x, target.y, shark.size, shark.eatCnt));
 		}
 	}
