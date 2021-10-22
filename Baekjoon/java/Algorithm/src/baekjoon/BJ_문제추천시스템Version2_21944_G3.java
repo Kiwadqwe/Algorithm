@@ -68,10 +68,6 @@ public class BJ_문제추천시스템Version2_21944_G3 {
 			map2.put(P,G);
 		}
 		
-		System.out.println(ts2);
-//		System.out.println(ts);
-//		System.out.println(map);
-//		System.out.println(map2);
 		st = new StringTokenizer(br.readLine());
 		M = Integer.parseInt(st.nextToken());
 		String s = "";
