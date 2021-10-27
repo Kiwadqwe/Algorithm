@@ -59,13 +59,4 @@ public class BJ_빵집_3109_G2 {
 		}
 		return false;
 	}
-
-//	private static void print() {
-//		for (int i = 0; i < R; i++) {
-//			for (int j = 0; j < C; j++) {
-//				System.out.print(visited[i][j]+" ");
-//			}
-//			System.out.println();
-//		}
-//	}
 }
