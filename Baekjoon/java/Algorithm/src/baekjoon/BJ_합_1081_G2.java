@@ -3,7 +3,7 @@ package baekjoon;
 import java.io.*;
 import java.util.*;
 
-public class BJ_합_1081 {
+public class BJ_합_1081_G2 {
 	static Long L,U;
 	static long[] cnt;
 	

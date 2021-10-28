@@ -3,7 +3,7 @@ package baekjoon;
 import java.io.*;
 import java.util.*;
 
-public class BJ_색종이_2563 {
+public class BJ_색종이_2563_S5 {
 	static int N;
 	
 	public static void main(String[] args) throws IOException {

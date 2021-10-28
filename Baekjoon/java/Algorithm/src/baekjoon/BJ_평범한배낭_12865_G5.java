@@ -3,7 +3,7 @@ package baekjoon;
 import java.io.*;
 import java.util.*;
 
-public class BJ_평범한배낭_12865 {
+public class BJ_평범한배낭_12865_G5 {
 	static int N,K,W,V;
 	static int[] weights, profits;
 	

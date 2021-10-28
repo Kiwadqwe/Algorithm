@@ -3,7 +3,7 @@ package baekjoon;
 import java.io.*;
 import java.util.*;
 
-public class BJ_맥주마시면서걸어가기_9205 {
+public class BJ_맥주마시면서걸어가기_9205_S1 {
 	static int n;
 	static ArrayList<int[]> arr;
 	

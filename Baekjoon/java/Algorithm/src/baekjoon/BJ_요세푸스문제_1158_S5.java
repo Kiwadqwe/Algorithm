@@ -3,7 +3,7 @@ package baekjoon;
 import java.io.*;
 import java.util.*;
 
-public class BJ_요세푸스문제_1158 {
+public class BJ_요세푸스문제_1158_S5 {
 	static int N,K;
 	public static void main(String[] args) throws Exception {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
