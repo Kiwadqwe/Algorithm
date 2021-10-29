@@ -56,6 +56,7 @@ public class BJ_게리맨더링_17471_G5 {
 		}else {
 			System.out.println(result);
 		}
+		
 	}
 
 	private static void powerset() {
