@@ -19,6 +19,7 @@ public class BJ_벽부수고이동하기_2206_G4 {
 			this.cnt = cnt;
 			this.check = check;
 		}
+		
 	}
 	
 	public static void main(String[] args) throws IOException {
