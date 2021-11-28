@@ -24,6 +24,7 @@ public class BJ_동전1_2293_S1 {
 				dp[j] += dp[j-array[i]];
 			}
 		}
+		
 		System.out.println(dp[k]);
 	}
 }
