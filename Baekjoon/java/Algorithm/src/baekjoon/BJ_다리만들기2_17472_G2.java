@@ -53,6 +53,7 @@ public class BJ_다리만들기2_17472_G2 {
 		
 		visited = new boolean[N][M];
 		V = 2;
+		
 		// 정점의 개수 구하기
 		for (int i = 0; i < N; i++) {
 			for (int j = 0; j < M; j++) {
