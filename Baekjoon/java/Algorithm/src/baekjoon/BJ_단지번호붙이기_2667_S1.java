@@ -47,6 +47,7 @@ public class BJ_단지번호붙이기_2667_S1 {
 				}
 			}
 		}
+		
 		System.out.println(dang);
 		Collections.sort(array);
 		for (Integer arr : array) {
