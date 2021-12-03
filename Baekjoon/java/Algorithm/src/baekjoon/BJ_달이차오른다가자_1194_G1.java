@@ -57,6 +57,7 @@ public class BJ_달이차오른다가자_1194_G1 {
 			size = q.size();
 			while(size --> 0) {
 				Point p = q.poll();
+				
 				if(array[p.x][p.y] == '1') {
 					System.out.println(depth);
 					return;
