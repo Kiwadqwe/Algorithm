@@ -46,6 +46,7 @@ public class BJ_롤케이크_3985_B1 {
 				result = i;
 			}
 		}
+		
 		System.out.println(expect+"\n"+result);
 	}
 }
