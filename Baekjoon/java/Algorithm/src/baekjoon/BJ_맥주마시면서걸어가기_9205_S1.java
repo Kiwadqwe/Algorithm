@@ -48,6 +48,7 @@ public class BJ_맥주마시면서걸어가기_9205_S1 {
 					}
 				}
 			}
+			
 			sb.append(d[0][n+1] ? "happy":"sad").append("\n");
 		}
 		System.out.println(sb);
