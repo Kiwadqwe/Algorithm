@@ -27,7 +27,6 @@ public class BJ_문제추천시스템Version1_G4 {
 		public String toString() {
 			return "Point [num=" + num + ",level=" + level + "]";
 		}
-		
 	}
 	
 	public static void main(String[] args) throws IOException {
