@@ -71,6 +71,7 @@ public class BJ_문제추천시스템Version2_21944_G3 {
 		st = new StringTokenizer(br.readLine());
 		M = Integer.parseInt(st.nextToken());
 		String s = "";
+		
 		for (int i = 0; i < M; i++) {
 			st = new StringTokenizer(br.readLine());
 			s = st.nextToken();
