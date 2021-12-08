@@ -62,6 +62,7 @@ public class BJ_미세먼지안녕_17144_G4 {
 		}
 		
 		int result = 0;
+		
 		for (int i = 0; i < R; i++) {
 			for (int j = 0; j < C; j++) {
 				if(array[i][j] != -1 || array[i][j] == 0) {
