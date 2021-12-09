@@ -30,6 +30,7 @@ public class BJ_배열돌리기1_16926_S3 {
 				array[i][j] = Integer.parseInt(st.nextToken());
 			}
 		}
+		
 		result = new int[N][M];
 		int a = Math.min(N, M);
 		visited = new boolean[N][M];
