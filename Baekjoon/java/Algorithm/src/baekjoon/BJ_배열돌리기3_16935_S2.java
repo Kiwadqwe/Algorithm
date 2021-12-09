@@ -37,6 +37,7 @@ public class BJ_배열돌리기3_16935_S2 {
 			for (int j = 0; j < array[0].length; j++) {
 				System.out.print(array[i][j]+" ");
 			}
+			
 			System.out.println();
 		}
 	}
