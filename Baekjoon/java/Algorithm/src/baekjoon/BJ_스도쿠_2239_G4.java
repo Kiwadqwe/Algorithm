@@ -38,6 +38,7 @@ public class BJ_스도쿠_2239_G4 {
 					go(x,y+1);
 				}
 			}
+			
 			// 다른 경우도 보기 위해서
 			array[x][y] = 0;
 			return;
