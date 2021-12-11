@@ -20,6 +20,7 @@ public class BJ_스위치켜고끄기_1244_S4 {
 
 		int s = Integer.parseInt(br.readLine());
 		student = new int[s][2];
+		
 		for (int i = 0; i < s; i++) {
 			st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < 2; j++) {
