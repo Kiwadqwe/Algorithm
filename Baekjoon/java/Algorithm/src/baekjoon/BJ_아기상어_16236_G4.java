@@ -146,4 +146,5 @@ public class BJ_아기상어_16236_G4 {
 			bfs(new Shark(target.x, target.y, shark.size, shark.eatCnt));
 		}
 	}
+	
 }
