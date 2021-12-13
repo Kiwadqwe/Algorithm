@@ -44,6 +44,7 @@ public class BJ_안전영역_2468_S1 {
 					if(!visited[i][j] && array[i][j] > k) {
 						cnt += 1;
 						bfs(i,j,k);
+						
 			result = Math.max(result, cnt);
 					}
 				}
