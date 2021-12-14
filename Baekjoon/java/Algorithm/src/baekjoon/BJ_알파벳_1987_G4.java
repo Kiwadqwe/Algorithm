@@ -22,6 +22,7 @@ public class BJ_알파벳_1987_G4 {
 		for (int i = 0; i < R; i++) {
 			array[i] = br.readLine().toCharArray();
 		}
+		
 		String tp = String.valueOf(array[0][0]);
 		go(0,0,tp);
 		System.out.println(result);
