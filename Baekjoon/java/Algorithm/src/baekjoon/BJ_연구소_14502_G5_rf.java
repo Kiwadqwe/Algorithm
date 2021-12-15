@@ -29,6 +29,7 @@ public class BJ_연구소_14502_G5_rf {
 		
 		array = new int[N][M];
 		tp = new int[N][M];
+		
 		for (int i = 0; i < N; i++) {
 			st = new StringTokenizer(br.readLine());
 			for (int j = 0; j < M; j++) {
