@@ -4,7 +4,7 @@ import java.io.*;
 import java.util.*;
 
 public class BJ_촌수계산_2644_S2 {
-	static int N,M,X,Y,cnt,result;
+	static int N,M,X,Y,result;
 	static int[][] array;
 	static boolean[] visited;
 	
@@ -30,7 +30,7 @@ public class BJ_촌수계산_2644_S2 {
 		
 		visited = new boolean[N+1];
 		result = -1;
-		dfs(X,cnt);
+		dfs(X, 0);
 		System.out.println(result);
 	}
 
