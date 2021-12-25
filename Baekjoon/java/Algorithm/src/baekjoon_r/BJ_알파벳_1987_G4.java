@@ -1,10 +1,7 @@
 package baekjoon_r;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.StringTokenizer;
+import java.io.*;
+import java.util.*;
 
 public class BJ_알파벳_1987_G4 {
 	static int R,C,cnt,result;
@@ -30,8 +27,8 @@ public class BJ_알파벳_1987_G4 {
 		
 		visited = new boolean[26];
 		visited[array[0][0]] = true;
-		cnt = 1;
-		dfs(0,0,cnt);
+		
+		dfs(0,0,1);
 		System.out.println(result);
 	}
 
@@ -50,6 +47,5 @@ public class BJ_알파벳_1987_G4 {
 			visited[array[nx][ny]] = false;
 		}
 	}
-
 
 }
