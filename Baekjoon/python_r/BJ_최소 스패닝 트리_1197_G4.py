@@ -5,6 +5,7 @@ input = sys.stdin.readline
 V,E = map(int,input().split())
 repres = [i for i in range(V+1)]
 array = []
+
 edgeCnt = 0
 hap = 0
 
