@@ -3,8 +3,6 @@ package baekjoon;
 import java.io.*;
 import java.util.*;
 
-import sun.security.util.Length;
-
 public class BJ_알파벳_1987_G4 {
 	static int R,C,result;
 	static char[][] array;
