@@ -51,7 +51,7 @@ public class BJ_나이트의이동_7562_S2 {
 
 	private static void bfs(int x, int y) {
 		Queue<Point> q = new LinkedList<>();
-		q.add(new Point(x,y,0));
+		q.add(new Point(x, y, 0));
 		
 		while(!q.isEmpty()) {
 			Point p = q.poll();
