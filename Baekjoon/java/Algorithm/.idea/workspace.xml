@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="50fc0281-eaab-43eb-9e85-44e5611f19d6" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_dfs_bfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_dfs_bfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_dikstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_dikstra.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_kruskal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_scp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_scp.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="23mUnySQd6Q9dBMbERY1e08bV55" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/baekjoon_r" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/baekjoon_r" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="애플리케이션 수준" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="디폴트 작업">
+      <changelist id="50fc0281-eaab-43eb-9e85-44e5611f19d6" name="변경" comment="" />
+      <created>1642338927389</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642338927389</updated>
+      <workItem from="1642338928500" duration="27000" />
+      <workItem from="1642339245082" duration="11000" />
+      <workItem from="1642416095171" duration="12000" />
+      <workItem from="1642595181955" duration="14000" />
+      <workItem from="1642596510715" duration="28000" />
+      <workItem from="1642681519904" duration="10000" />
+      <workItem from="1643707300702" duration="333000" />
+      <workItem from="1645588723579" duration="4310000" />
+      <workItem from="1645857275544" duration="675000" />
+      <workItem from="1646743124715" duration="1769000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
