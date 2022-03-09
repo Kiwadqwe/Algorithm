@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50fc0281-eaab-43eb-9e85-44e5611f19d6" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_dfs_bfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_dfs_bfs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_dikstra.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_dikstra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_kruskal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_kruskal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_scp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_scp.java" afterDir="false" />
-    </list>
+    <list default="true" id="50fc0281-eaab-43eb-9e85-44e5611f19d6" name="변경" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +47,7 @@
       <workItem from="1643707300702" duration="333000" />
       <workItem from="1645588723579" duration="4310000" />
       <workItem from="1645857275544" duration="675000" />
-      <workItem from="1646743124715" duration="1769000" />
+      <workItem from="1646743124715" duration="1919000" />
     </task>
     <servers />
   </component>
