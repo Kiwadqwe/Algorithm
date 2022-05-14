@@ -3,7 +3,6 @@ import sys
 input=sys.stdin.readline
 
 n=input()
-
 alpha=[0]*26
 
 for i in range(len(n)):
