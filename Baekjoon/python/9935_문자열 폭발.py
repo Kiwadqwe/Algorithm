@@ -7,6 +7,7 @@ tp = []
 
 for i in range(len(a)):
     tp.append(a[i])
+    print(tp[-len(b):])
     if tp[-len(b):] == b:
         del tp[-len(b):]
 
