@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="50fc0281-eaab-43eb-9e85-44e5611f19d6" name="변경" comment="" />
+    <list default="true" id="50fc0281-eaab-43eb-9e85-44e5611f19d6" name="변경" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/baekjoon/BJ_미세먼지안녕_17144_G4.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/baekjoon/BJ_미세먼지안녕_17144_G4.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/repeat/repeat_dfs_bfs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/repeat/repeat_dfs_bfs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/1157_단어공부.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/1157_단어공부.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../python/9935_문자열 폭발.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../python/9935_문자열 폭발.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,6 +55,10 @@
       <workItem from="1645588723579" duration="4310000" />
       <workItem from="1645857275544" duration="675000" />
       <workItem from="1646743124715" duration="1919000" />
+      <workItem from="1646958563085" duration="62000" />
+      <workItem from="1650213526953" duration="152000" />
+      <workItem from="1651907253345" duration="969000" />
+      <workItem from="1659082953233" duration="11000" />
     </task>
     <servers />
   </component>
