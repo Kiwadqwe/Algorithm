@@ -99,7 +99,7 @@ public class BJ_미세먼지안녕_17144_G4 {
 		for (int k = 1; k < arr.size(); k+=2) {
 			// 좌
 			for (int j = arr.get(k).x+1; j < R-1; j++) {
-				array[j][0] = array[j+1][0]; 
+				array[j][0] = array[j+1][0];
 			}
 			// 아래
 			for (int j = 0; j < C-1; j++) {
