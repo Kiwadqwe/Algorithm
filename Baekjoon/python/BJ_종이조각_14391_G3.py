@@ -4,12 +4,11 @@ input = sys.stdin.readline
 N,M = map(int,input().split())
 
 array = [list(map(int,input().strip())) for _ in range(N)]
-
 result = []
 
 for i in range(1 << N*M):
     hap = 0
-    
+
     for x in range(N):
         x_hap = 0
         for y in range(M):
