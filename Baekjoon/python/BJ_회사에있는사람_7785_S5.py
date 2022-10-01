@@ -10,6 +10,7 @@ for x,y in array:
         d.pop(x)
     else:
         d[x] = y
+        
 d = sorted(d.items(),reverse = True)
 
 for x,y in d:
