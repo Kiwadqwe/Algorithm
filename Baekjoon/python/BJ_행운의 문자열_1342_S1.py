@@ -23,6 +23,7 @@ def dfs(idx, choosed):
         count[c] += 1
 
 cSet = set()
+
 for s in S:
     c = ord(s) - ord('a')
     cSet.add(s)
