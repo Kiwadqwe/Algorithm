@@ -3,6 +3,7 @@ input = sys.stdin.readline
 
 T = int(input())
 result = []
+
 def check2(S,start,end):
     while start<end:
         if S[start] == S[end]:
