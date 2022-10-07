@@ -11,6 +11,7 @@ for dd in d:
     if dd in d2.keys():
         result.append(dd)
 
+
 result.sort()
 print(len(result))
 print(*result, sep="\n")
