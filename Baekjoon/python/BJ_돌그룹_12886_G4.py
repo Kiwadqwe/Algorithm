@@ -16,36 +16,16 @@ def bfs(A,B,C):
         if A == B == C:
             return 1
         
-        if A != B:
-            if A < B:
-                if not visited[A+A][B-A]:
-                    q.append((A+A,B-A,C))
-                    visited[A][B] = True
-            else:
-                if not visited[B+B][A-B]:
-                    q.append((B+B,A-B,C))
-                    visited[B+B][A-B] = True
-                
-        if A != C:
-            if A < C:
-                if not visited[A+A][C-A]:
-                    q.append((A+A,C-A,B))
-                    visited[A+A][C-A] = True
-            else:
-                if not visited[C+C][A-C]:
-                    q.append((C+C,A-C,B))
-                    visited[C+C][A-C] = True
-                
-        if B != C:
-            if B < C:
-                if not visited[B+B][C-B]:
-                    q.append((B+B,C-B,A))
-                    visited[B+B][C-B] = True
-            else:
-                if not visited[C+C][B-C]:
-                    q.append((C+C,B-C,A))
-                    visited[C+C][B-C] = True
-    
+        for i,j in (A,B),(A,C),(B,C):
+            if i < j:
+                if not visited[i+i][j-i]:
+                    q.append((i+i,j-i,l-(i+j)))
+                    visited[i+i][j-i] = True
+            if j < i:
+                if not visited[j+j][i-j]:
+                    q.append((j+j,i-j,l-(i+j)))
+                    visited[j+j][i-j] = True
+         
     return 0
 
 print(bfs(A,B,C))
