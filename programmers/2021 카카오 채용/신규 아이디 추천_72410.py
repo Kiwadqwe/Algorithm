@@ -5,7 +5,7 @@ def solution(new_id):
     id = re.sub(r"[^a-z0-9-_.]","",new_id)
     id = re.sub('\.+', '.', id)
     id = id.lstrip('.').rstrip('.')
-    
+
     if not len(id):
         id = "a"
         
