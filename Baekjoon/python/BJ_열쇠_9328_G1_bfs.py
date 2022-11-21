@@ -21,6 +21,7 @@ def bfs(x,y):
             
             if 0<=nx<N+2 and 0<=ny<M+2:
                 if not visited[nx][ny] and array[nx][ny] != '*':
+                    visited[nx][ny] = True
                     if array[nx][ny].islower():
                         a = ord(array[nx][ny])-ord('a')
                         key[a] = True
@@ -38,7 +39,6 @@ def bfs(x,y):
                     elif array[nx][ny] == '$':
                         cnt+=1
 
-                    visited[nx][ny] = True
                     q.append((nx,ny))
                     
     return cnt
@@ -47,7 +47,6 @@ result = []
 for t in range(T):
     N,M = map(int,input().split())
     array = [['.'] * (M+2) for _ in range(N+2)]
-    ndoor = []
     key = [False] * 26
     
     for i in range(N):
