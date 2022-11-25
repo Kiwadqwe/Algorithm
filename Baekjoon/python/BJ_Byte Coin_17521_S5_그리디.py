@@ -21,14 +21,11 @@ for i in range(len(array)):
             coin = total//array[i]
             total -= array[i]*coin 
             buy = True
-            continue
-
     elif array[i] >= array[i+1]:
         # 팔 경우
         if buy:
             total += coin*array[i]
             coin = 0
             buy = False
-            continue
 
 print(total)

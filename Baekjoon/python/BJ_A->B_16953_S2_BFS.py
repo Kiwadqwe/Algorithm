@@ -1,7 +1,6 @@
 import sys
 from collections import deque
 input = sys.stdin.readline
-
 A,B = map(int,input().split())
 q = deque()
 q.append((A,1))

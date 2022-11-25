@@ -6,14 +6,14 @@ N = int(input())
 array = [[] for _ in range(N+1)]
 p = [0] * (N+1)
 d = [0] * (N+1)
-c = [0] * (N+1)
+visited = [0] * (N+1)
 
 def dfs(x,depth):
-    c[x] = True
+    visited[x] = True
     d[x] = depth
     
     for y in array[x]:
-        if c[y]: continue
+        if visited[y]: continue
         p[y] = x
         dfs(y,depth+1)
 
