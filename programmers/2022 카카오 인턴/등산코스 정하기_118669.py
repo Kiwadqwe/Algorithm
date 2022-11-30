@@ -14,8 +14,7 @@ def dijkstra(n, array, gates, summits,dp):
         
         for y,w in array[x]:
             # 봉우리까지의 경로별로 최대 비용 저장
-            # 현재 위치에서 가장 큰 경로
-            # 최대 비용중 최소값을 가진 등산로 선택
+            # 현재 위치(x)에서 목적지(y)까지 가장 큰 비용
             m = max(dp[x],w)
             if m < dp[y]:
                 dp[y] = m
@@ -35,6 +34,7 @@ def solution(n, paths, gates, summits):
     
     intensity,result = int(1e9),0
     for s in summits:
+        # 최대 비용중 최소값을 가진 등산로 선택
         if dp[s] < intensity:
             intensity = dp[s]
             result = s 
