@@ -11,8 +11,6 @@ def check(K):
     # 1) 2:3, 3:
     # 2) 0:2, 2:
     for i in range(1,K):
-        x = K-i-i
-        y = K-i
         a = array[K-i-i:K-i]
         b = array[K-i:]
         if a == b:
