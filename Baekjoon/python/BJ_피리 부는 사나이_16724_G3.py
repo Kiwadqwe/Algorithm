@@ -32,20 +32,15 @@ def next_position(x,y):
 
     return -1
 
-
 for x in range(N):
     for y in range(M):
         next_k = next_position(x,y)
+        now_k = x*M+y
         
-        if next_k != -1:
-            now_k = x*M+y
+        if next_k != -1 and find(now_k) != find(next_k):
             union(now_k,next_k)
-            
-result = 0
-visited = dict()
-for i in range(len(p)):
-    if find(p[i]) not in visited:
-        result+=1
-        visited[p[i]] = True
 
-print(result)
+for i in range(len(p)):
+    find(i)
+
+print(len(set(p)))
