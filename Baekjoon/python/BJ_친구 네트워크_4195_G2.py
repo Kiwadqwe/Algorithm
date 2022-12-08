@@ -3,42 +3,43 @@ input = sys.stdin.readline
 
 T = int(input())
 
-result = []
-
-def get(x):
+def union(x,y):
+    x = find(x)
+    y = find(y)
+    
+    if x != y:
+        p[x] = y
+        f[y] += f[x]
+        
+def find(x):
     if x != p[x]:
         p[x] = find(p[x])
-        
+    
     return p[x]
 
-def union(x,y):
-    a = get(x)
-    b = get(y)
+def friend_add(x,y):
     
-    if a != b:
-        p[a] = b
-        n[b]+=n[a]
+    if x not in p:
+        p[x] = x
+        f[x] = 1
 
-def find(x):
-    return get(x)
-
+    if y not in p:
+        p[y] = y
+        f[y] = 1
+        
+result = []
 for _ in range(T):
-    p = {}
-    n = {}
     F = int(input())
-    
+    array = [[] for _ in range(F+1)]
+    p = {}
+    f = {}
+
     for i in range(F):
-        x,y = map(str,input().split())
+        a,b = map(str,input().split())
         
-        if x not in p:
-            p[x] = x
-            n[x] = 1
+        friend_add(a,b)
+        union(a,b)
+
+        result.append(f[find(a)])
         
-        if y not in p:
-            p[y] = y
-            n[y] = 1
-            
-        union(x,y)
-        result.append(n[find(p[x])])
-        
-print(*result,sep="\n")
+print(*result, sep="\n")
