@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="361c35c0-e3a4-49ae-943a-d60b0ffc823c" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BJ_항공_10775_G2.java" beforeDir="false" afterPath="$PROJECT_DIR$/BJ_항공_10775_G2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BJ_항공_10775_G2.java" beforeDir="false" afterPath="$PROJECT_DIR$/BJ_공항_10775_G2.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +35,8 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
-    <configuration name="BJ_항공_10775_G2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_항공_10775_G2" />
+    <configuration name="BJ_공항_10775_G2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BJ_공항_10775_G2" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -45,7 +44,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.BJ_항공_10775_G2" />
+        <item itemvalue="애플리케이션.BJ_공항_10775_G2" />
       </list>
     </recent_temporary>
   </component>
@@ -59,11 +58,22 @@
       <updated>1670674092435</updated>
       <workItem from="1670674094300" duration="157000" />
       <workItem from="1670674280829" duration="132000" />
-      <workItem from="1670674420015" duration="36000" />
+      <workItem from="1670674420015" duration="213000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

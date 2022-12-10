@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class BJ_항공_10775_G2 {
+public class BJ_공항_10775_G2 {
     static int[] p;
     static int G;
     static int P;
