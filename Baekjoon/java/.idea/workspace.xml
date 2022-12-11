@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="361c35c0-e3a4-49ae-943a-d60b0ffc823c" name="변경" comment="">
-      <change beforePath="$PROJECT_DIR$/BJ_항공_10775_G2.java" beforeDir="false" afterPath="$PROJECT_DIR$/BJ_공항_10775_G2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -58,7 +59,8 @@
       <updated>1670674092435</updated>
       <workItem from="1670674094300" duration="157000" />
       <workItem from="1670674280829" duration="132000" />
-      <workItem from="1670674420015" duration="213000" />
+      <workItem from="1670674420015" duration="281000" />
+      <workItem from="1670688422514" duration="601000" />
     </task>
     <servers />
   </component>
