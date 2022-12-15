@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="361c35c0-e3a4-49ae-943a-d60b0ffc823c" name="변경" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/java/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/java/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,8 +43,9 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
-  <component name="RunManager" selected="애플리케이션.BJ_두용액_2470_G5">
+  <component name="RunManager" selected="애플리케이션.BJ_두개의탑_2118_G5">
     <configuration name="BJ_단어정렬_1181_S5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="BJ_단어정렬_1181_S5" />
       <module name="java" />
@@ -60,15 +60,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_귀여운라이언_15565_S1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_귀여운라이언_15565_S1" />
+    <configuration name="BJ_데스나이트_16948_S1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BJ_데스나이트_16948_S1" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_데스나이트_16948_S1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_데스나이트_16948_S1" />
+    <configuration name="BJ_두개의탑_2118_G5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BJ_두개의탑_2118_G5" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,11 +83,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="애플리케이션.BJ_두개의탑_2118_G5" />
         <item itemvalue="애플리케이션.BJ_두용액_2470_G5" />
         <item itemvalue="애플리케이션.BJ_돌그룹_12886_G4" />
         <item itemvalue="애플리케이션.BJ_데스나이트_16948_S1" />
         <item itemvalue="애플리케이션.BJ_단어정렬_1181_S5" />
-        <item itemvalue="애플리케이션.BJ_귀여운라이언_15565_S1" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +102,7 @@
       <workItem from="1670674094300" duration="157000" />
       <workItem from="1670674280829" duration="132000" />
       <workItem from="1670674420015" duration="281000" />
-      <workItem from="1670688422514" duration="45759000" />
+      <workItem from="1670688422514" duration="49690000" />
     </task>
     <servers />
   </component>
@@ -194,9 +194,14 @@
           <option name="timeStamp" value="86" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/BJ_두용액_2470_G5.java</url>
-          <line>45</line>
-          <option name="timeStamp" value="91" />
+          <url>file://$PROJECT_DIR$/BJ_두개의탑_2118_G5.java</url>
+          <line>52</line>
+          <option name="timeStamp" value="94" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BJ_두개의탑_2118_G5.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
