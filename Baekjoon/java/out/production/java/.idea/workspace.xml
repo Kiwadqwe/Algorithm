@@ -44,38 +44,41 @@
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="프로젝트" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="애플리케이션.BJ_두개의탑_2118_G5">
-    <configuration name="BJ_단어정렬_1181_S5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_단어정렬_1181_S5" />
+  <component name="RunManager" selected="애플리케이션.PG_양궁대회_92342">
+    <configuration name="BJ_배열합치기_11728_S5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BJ_배열합치기_11728_S5" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_돌그룹_12886_G4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_돌그룹_12886_G4" />
+    <configuration name="BJ_미로만들기_2665_G4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BJ_미로만들기_2665_G4" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_데스나이트_16948_S1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_데스나이트_16948_S1" />
+    <configuration name="BJ_미로만들기_2665_G4_bfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BJ_미로만들기_2665_G4_bfs" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_두개의탑_2118_G5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_두개의탑_2118_G5" />
+    <configuration name="PG_성격유형검사하기_118666" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PG_성격유형검사하기_118666" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_두용액_2470_G5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_두용액_2470_G5" />
+    <configuration name="PG_양궁대회_92342" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PG_양궁대회_92342" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -83,11 +86,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.BJ_두개의탑_2118_G5" />
-        <item itemvalue="애플리케이션.BJ_두용액_2470_G5" />
-        <item itemvalue="애플리케이션.BJ_돌그룹_12886_G4" />
-        <item itemvalue="애플리케이션.BJ_데스나이트_16948_S1" />
-        <item itemvalue="애플리케이션.BJ_단어정렬_1181_S5" />
+        <item itemvalue="애플리케이션.PG_양궁대회_92342" />
+        <item itemvalue="애플리케이션.PG_성격유형검사하기_118666" />
+        <item itemvalue="애플리케이션.BJ_배열합치기_11728_S5" />
+        <item itemvalue="애플리케이션.BJ_미로만들기_2665_G4" />
+        <item itemvalue="애플리케이션.BJ_미로만들기_2665_G4_bfs" />
       </list>
     </recent_temporary>
   </component>
@@ -102,7 +105,7 @@
       <workItem from="1670674094300" duration="157000" />
       <workItem from="1670674280829" duration="132000" />
       <workItem from="1670674420015" duration="281000" />
-      <workItem from="1670688422514" duration="49690000" />
+      <workItem from="1670688422514" duration="67737000" />
     </task>
     <servers />
   </component>
@@ -195,13 +198,53 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BJ_두개의탑_2118_G5.java</url>
-          <line>52</line>
+          <line>60</line>
           <option name="timeStamp" value="94" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/BJ_두개의탑_2118_G5.java</url>
           <line>31</line>
           <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BJ_두수의합_3273_S3.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BJ_듣보잡_1764_S4.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BJ_듣보잡_1764_S4.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BJ_미로만들기_2665_G4_bfs.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="104" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/BJ_미로만들기_2665_G4.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PG_성격유형검사하기_118666.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PG_양궁대회_92342.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="130" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PG_양궁대회_92342.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="131" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

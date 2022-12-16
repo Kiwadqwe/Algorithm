@@ -49,37 +49,37 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager" selected="애플리케이션.BJ_배열합치기_11728_S5">
-    <configuration name="BJ_배열합치기_11728_S5" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_배열합치기_11728_S5" />
+  <component name="RunManager" selected="애플리케이션.PG_키패드누르기_62756">
+    <configuration name="PG_두큐합같게만들_118667" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PG_두큐합같게만들_118667" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_듣보잡_1764_S4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_듣보잡_1764_S4" />
+    <configuration name="PG_키패드누르기_62756" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PG_키패드누르기_62756" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_문제집_1766_G2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_문제집_1766_G2" />
+    <configuration name="PG_양궁대회_92342" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PG_양궁대회_92342" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_미로만들기_2665_G4" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_미로만들기_2665_G4" />
+    <configuration name="PG_양과늑대_92343" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PG_양과늑대_92343" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BJ_미로만들기_2665_G4_bfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BJ_미로만들기_2665_G4_bfs" />
+    <configuration name="PG_k진수에서소수개수구하기_92335" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="PG_k진수에서소수개수구하기_92335" />
       <module name="java" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -87,11 +87,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="애플리케이션.BJ_배열합치기_11728_S5" />
-        <item itemvalue="애플리케이션.BJ_미로만들기_2665_G4" />
-        <item itemvalue="애플리케이션.BJ_미로만들기_2665_G4_bfs" />
-        <item itemvalue="애플리케이션.BJ_문제집_1766_G2" />
-        <item itemvalue="애플리케이션.BJ_듣보잡_1764_S4" />
+        <item itemvalue="애플리케이션.PG_키패드누르기_62756" />
+        <item itemvalue="애플리케이션.PG_k진수에서소수개수구하기_92335" />
+        <item itemvalue="애플리케이션.PG_두큐합같게만들_118667" />
+        <item itemvalue="애플리케이션.PG_양과늑대_92343" />
+        <item itemvalue="애플리케이션.PG_양궁대회_92342" />
       </list>
     </recent_temporary>
   </component>
@@ -106,7 +106,7 @@
       <workItem from="1670674094300" duration="157000" />
       <workItem from="1670674280829" duration="132000" />
       <workItem from="1670674420015" duration="281000" />
-      <workItem from="1670688422514" duration="57159000" />
+      <workItem from="1670688422514" duration="78026000" />
     </task>
     <servers />
   </component>
@@ -231,6 +231,26 @@
           <url>file://$PROJECT_DIR$/BJ_미로만들기_2665_G4.java</url>
           <line>56</line>
           <option name="timeStamp" value="106" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PG_성격유형검사하기_118666.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="107" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PG_두큐합같게만들_118667.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="149" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PG_k진수에서소수개수구하기_92335.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="161" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/PG_k진수에서소수개수구하기_92335.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="162" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
